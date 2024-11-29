@@ -41,4 +41,8 @@
   - 미디움 -> settings -> Security and apps -> Integration tokens
 - ollama 다운
   - 해당 프로젝트에서 ai 모델은 gemma2:9b 사용 
-- phython scheduler 
+- phython scheduler
+- 도커로 실행시 
+  ```bash
+    sudo docker run -d --name batchpy_scheduler_container --add-host=host.docker.internal:host-gateway speech2/auto_news_summary:amd  
+  ```
