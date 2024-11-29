@@ -11,7 +11,7 @@ async def summarize_sections(news_data):
     for item in news_data:
         response = requests.post(
             OLLAMA_URL,
-            json={"model": "gemma2:9b", "prompt": "다음 기사의 내용을 3개의 한글 문장으로 요약해라, 요약 할 때는 뉴스의 내용 만 작성해라"
+            json={"model": "gemma2:9b", "prompt": "다음 기사의 내용을 3개의 한글 문장으로 요약해라, 요약 할 때는 뉴스의 내용 만 한글로 작성해라"
                                                   + item.content, "stream": False}
         )
 
