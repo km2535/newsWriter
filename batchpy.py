@@ -3,7 +3,7 @@ import schedule
 import time
 import asyncio
 from ollama_api import summarize_sections
-from post_to_medium import post_to_medium
+from post_medium import post_to_medium
 from scraper import NewsSummaryService
 
 # 비동기 작업 함수
@@ -26,6 +26,10 @@ async def run_job(period):
     medium_post_link = post_to_medium(
         title=title,
         content=combined_content
+    )
+    medium_post_link = post_to_medium(
+        title="title",
+        content="combined_content"
     )
 
 # 비동기 작업을 schedule로 등록하는 함수
