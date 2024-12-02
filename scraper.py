@@ -16,13 +16,13 @@ class ArticleUrl:
 class NewsSummaryService:
     CATEGORY_URLS = {
         "politics": "https://www.ytn.co.kr/news/list.php?mcd=0101",
-        # "economy": "https://www.ytn.co.kr/news/list.php?mcd=0102",
-        # "society": "https://www.ytn.co.kr/news/list.php?mcd=0103",
-        # "international": "https://www.ytn.co.kr/news/list.php?mcd=0104",
-        # "science": "https://www.ytn.co.kr/news/list.php?mcd=0105",
-        # "culture": "https://www.ytn.co.kr/news/list.php?mcd=0106",
-        # "sports": "https://www.ytn.co.kr/news/list.php?mcd=0107",
-        # "nationwide": "https://www.ytn.co.kr/news/list.php?mcd=0115",
+        "economy": "https://www.ytn.co.kr/news/list.php?mcd=0102",
+        "society": "https://www.ytn.co.kr/news/list.php?mcd=0103",
+        "international": "https://www.ytn.co.kr/news/list.php?mcd=0104",
+        "science": "https://www.ytn.co.kr/news/list.php?mcd=0105",
+        "culture": "https://www.ytn.co.kr/news/list.php?mcd=0106",
+        "sports": "https://www.ytn.co.kr/news/list.php?mcd=0107",
+        "nationwide": "https://www.ytn.co.kr/news/list.php?mcd=0115",
     }
 
     def scrape_news(self) -> list[ArticleUrl]:
