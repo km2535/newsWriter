@@ -8,7 +8,7 @@ load_dotenv()
 MEDIUM_API_BASE_URL = os.getenv('MEDIUM_API_BASE_URL')
 MEDIUM_INTEGRATION_TOKEN = os.getenv('MEDIUM_INTEGRATION_TOKEN')
 
-def post_to_medium(title, content, tags=None, publish_status="draft"):
+def post_to_medium(title, content, tags=None, publish_status="public"):
     print("Posting to Medium...")
     headers = {
         "Authorization": f"Bearer {MEDIUM_INTEGRATION_TOKEN}",
