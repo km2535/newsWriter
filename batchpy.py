@@ -15,7 +15,7 @@ async def run_job(period):
     summarized_data = await summarize_sections(news_data)  # 뉴스 요약
 
     combined_content = "\n\n".join(
-        f"<h2>{item['title']}</h2>\n<p>{item['content']}</p>"
+        f"<h2><a href={item['url']}>{item['title']}<a/></h2>\n<p>{item['content']}</p>"
         for item in summarized_data
     )
 

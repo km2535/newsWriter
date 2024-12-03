@@ -27,6 +27,6 @@ async def summarize_sections(news_data):
             print("No 'content' in response:", response_data)
             summary = "No summary available"
 
-        summarized_data.append({"title": item.title, "content": summary})
+        summarized_data.append({"title": item.title, "content": summary, "url": item.url})
 
     return summarized_data
